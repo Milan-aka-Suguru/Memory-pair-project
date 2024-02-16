@@ -1,7 +1,6 @@
-using System;
 using System.Data;
 using MySql.Data.MySqlClient;
-using Godot;
+using System;
 public class MySQLManager
 {
 	private string connectionString;
