@@ -1,18 +1,107 @@
-[gd_scene load_steps=3 format=3 uid="uid://lijm7m6ehldq"]
-
-[sub_resource type="BoxShape3D" id="BoxShape3D_dlwan"]
+[gd_scene load_steps=4 format=3 uid="uid://lijm7m6ehldq"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_8b77t"]
 
+[sub_resource type="BoxMesh" id="BoxMesh_00ihm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7bcrp"]
+albedo_color = Color(1, 0, 1, 1)
+
 [node name="MainScene" type="Node3D"]
 
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 2.15758, 0, 0, 0)
+[node name="Asztal" type="RigidBody3D" parent="."]
+transform = Transform3D(3.59904, 0, 0, 0, 0.0722898, 0, 0, 0, 4.20289, 0, 0.399414, 0)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Asztal"]
 transform = Transform3D(1, 0, 0, 0, 1.44022, 0, 0, 0, 1, 0, 0, 0)
-shape = SubResource("BoxShape3D_dlwan")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="RigidBody3D/CollisionShape3D"]
 mesh = SubResource("BoxMesh_8b77t")
-skeleton = NodePath("../..")
+
+[node name="k1" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k1"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k2" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k2"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k3" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k3"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k4" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k4"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k5" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k5"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k6" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k6"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k7" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k7"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k8" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k8"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k9" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k9"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
+
+[node name="k10" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4351, 0)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="k10"]
+transform = Transform3D(0.287617, 0, 0, 0, -0.0506735, 0, 0, 0, 0.162123, -0.905253, 0.320297, 0.89607)
+mesh = SubResource("BoxMesh_00ihm")
+skeleton = NodePath("")
+surface_material_override/0 = SubResource("StandardMaterial3D_7bcrp")
