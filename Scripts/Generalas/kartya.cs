@@ -1,11 +1,9 @@
 using Godot;
 using System.Data;
-using System.Security.Permissions;
-
 public partial class kartya : Node
 {
 	private MySQLManager dbManager;
-
+	private Helloworld db;
 	public override void _Ready()
 	{
 		dbManager = new MySQLManager("localhost", "kartyak", "root", "");

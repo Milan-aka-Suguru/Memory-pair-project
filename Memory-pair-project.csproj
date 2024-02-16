@@ -11,5 +11,4 @@
         <HintPath>Scripts/References/MySql.Data.dll</HintPath>
     </Reference>
 </ItemGroup>
-
 </Project>
